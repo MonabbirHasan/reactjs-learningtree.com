@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.menu_hide {
+  z-index: 100;
+}
+.navbar-brand {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 30px !important ;
+}
+.active_menu {
+  border-bottom: 3px solid black;
+}
+.nav-item {
+  padding: 10px;
+}
+.nav-link {
+  text-transform: capitalize;
+  color: #000 !important;
+  font-weight: 400;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.nav-link:hover {
+  background-color: black;
+  color: #fff !important;
+}
+/* category0 */
+.hoverd_menu .category {
+  visibility: hidden;
+  display: none;
+  position: absolute;
+  padding: 10px;
+  z-index: 100;
+}
+.hoverd_menu .category {
+  display: block;
+  background: rgba(0, 0, 0, 0.09);
+  backdrop-filter: blur(20px);
+  width: 300px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.09);
+  margin-top: 6px;
+  z-index: 1000;
+}
+.hoverd_menu:hover .category {
+  visibility: visible;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+.category .parent-category {
+  padding: 5px;
+}
+.category .parent-category .fron_menu {
+  text-decoration: none;
+  padding: 5px;
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: 400;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  color: #000;
+  margin: 5px 0;
+}
+.category .parent-category .fron_menu:hover {
+  background-color: #000000;
+  color: #fff;
+  border-radius: 5px;
+}
+.f-category {
+  visibility: hidden;
+  display: none;
+  position: absolute;
+  left: -20%;
+  padding: 5px;
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: 400;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.09);
+  backdrop-filter: blur(20px);
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.09);
+}
+.f-category li {
+  padding: 5px;
+}
+.f-category li:hover {
+  background-color: black;
+  color: #fff;
+  border-radius: 5px;
+}
+.front:hover .f-category {
+  display: block;
+  visibility: visible;
+  color: #000000;
+  border-radius: 5px;
+}
+.full {
+  height: 200px;
+  overflow: scroll;
+}
+.full::-webkit-scrollbar {
+  width: 0;
+}
+/*  */
+/* .web_design .web-d{
+  visibility: hidden;
+  display: none;
+  position: absolute;
+  left: -20%;
+  padding: 5px;
+  font-size: 15px;
+  z-index: 1;
+  text-transform: capitalize;
+  font-weight: 400;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0px 5px 5px #dad5d5;
+  color: #000;
+  background-color: #ffffff;
+}
+.web-d li{
+  padding: 5px;
+}
+.web-d li:hover{
+  background-color: black;
+  color: #fff;
+  border-radius: 5px;
+}
+.web_design:hover .web-d{
+ display: block;
+ visibility: visible;
+} */
+.img-banner {
+  width: 600px !important;
+  height: 100% !important;
+}
+
+.banner {
+  background-image: url('./assets/student.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  filter: brightness(0.6);
+}
+.banner-video {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.banner-video video {
+  width: 100%;
+  height: auto;
+}
+.banner-text {
+  position: absolute;
+  top: 40%;
+}
+.item {
+  margin-top: 5% !important;
+  text-align: left;
+}
+.item h1 {
+  padding-bottom: 20px;
+  text-transform: capitalize;
+}
+.course_img img {
+  transition: 0.5s;
+  transform: scale(1.2);
+}
+.course_img:hover img {
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+ .d-item {
+  background: #fff;
+  padding: 5px;
+  box-shadow: 2px 4px 5px #eee, 3px 5px 7px #eee;
+  border: 2px solid #bbb;
+  margin: 5px;
+  border-radius: 5px;
+} 
+.item span {
+  text-transform: capitalize;
+  color: #000;
+  font-weight: 500;
+}
+h2 {
+  text-transform: capitalize;
+  color: #000;
+  font-size: 20px;
+}
+p {
+  padding: 20px 0;
+  text-transform: capitalize;
+}
+h3{
+  text-transform: capitalize;
+  border-bottom: 2px solid #000;
+  display: inline-block;
+}
